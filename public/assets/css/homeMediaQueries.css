@@ -1,0 +1,108 @@
+@media (max-width: 992px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    header {
+        left: -400px;
+        transition: all 600ms ease;
+        display: none;
+    }
+
+    #header-spacing {
+        width: 0% !important;
+        min-width: 0px;
+    }
+
+    #content {
+        width: 100%;
+        position: relative;
+        transition: left 500ms;
+        left: 0;
+    }
+    
+    #row-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .disabled-element, #search-notes-input, #btnSearchNotes, #btnCancelSearch, #box-btnSave, #myNoteH3 {
+        display: none !important;
+    }
+
+    #btnShowHeader {
+        width: 50px;
+        height: 50px;
+        background-color: #b5b6a0;
+        border: 3px solid #969780;
+        color: #fffcf3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 30px;
+        position: absolute;
+        left: 14px;
+        top: 14px;
+    }
+
+    #btnShowHeader:active {
+        background-color: #acad95;
+    }
+
+    #btnHiddenHeader {
+        height: 35px;
+        width: 35px;
+        border: 0;
+        background: none;
+        color: #dedfc5;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    #btnHiddenHeader:active {
+        color: #cbccb3;
+    }
+
+    #header-note {
+        justify-content: center !important;
+    }
+
+    .btnSaveNote {
+        margin: 0 15px;
+    }
+
+    footer {
+        height: 80px;
+    }
+
+    #note-space {
+        flex-direction: column;
+    }
+
+    #tool-box {
+        height: 50px;
+        margin: 0px;
+    }
+
+    #tool-box-config {
+        height: 50px;
+        display: flex;
+        gap: 0px;
+    }
+
+    #tool-box-config button {
+        margin: 0px 8px;
+    }
+
+    .disabled-element-mobile {
+        display: flex !important;
+    }
+
+    #save-mobile {
+	display: inline;
+    }
+}

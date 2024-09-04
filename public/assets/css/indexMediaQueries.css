@@ -1,0 +1,13 @@
+@media (max-width: 992px) {
+    body {
+        background-color: #3d423c;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    #links-box {
+        margin-top: 25vh;
+    }
+}

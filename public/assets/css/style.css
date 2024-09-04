@@ -1,0 +1,921 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap'); /* font-family: "Playwrite DE Grund", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* font-family: "Open Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap'); /* font-family: "Playwrite AR", cursive; */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: "Playwrite DE Grund", cursive;
+	line-height: 1;
+	background-color: #fffcf3;
+	display: flex;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+	background-color: #3d423c;
+    height: 100vh;
+    width: 14%;
+    position: fixed;
+	min-width: 240px;
+	transition: left 500ms;
+	left: 0px;
+}
+
+footer {
+	background-color: #6d6d6d;
+	width: 100%;
+	height: 100px;
+}
+
+::selection {
+    background: #e7e7e7;
+    color: #6d6d6d;
+}
+
+::-webkit-selection {
+    background: #e7e7e7;
+    color: #6d6d6d;
+}
+
+::-moz-selection {
+    background: #e7e7e7;
+    color: #6d6d6d;
+}
+
+#title-notes, #signUp-box, #logIn-box {
+	display: flex;
+	justify-content: center;
+}
+
+#signUp-box {
+	margin-top: 200px;
+}
+
+#title-notes h1 {
+	font-family: "Playwrite DE Grund", cursive;
+	font-size: 62px;
+	color: #dedfc5;
+	font-weight: 600;
+	margin-top: 50px;
+}
+
+#signUp, #logIn {
+	font-family: "Playwrite DE Grund", cursive;
+	width: 60%;
+	height: 50px;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #dedfc5;
+	border: 3px solid #b5b6a0;
+	color: #2e2e2e;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+#signUp:active, #logIn:active, #signUp-send:active, #logIn-send:active {
+	background-color: #c7c9af;
+}
+
+#input-box {
+	margin-top: 180px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#nameInput, #emailInput, #passInput {
+	font-family: "Playwrite DE Grund", cursive;
+	width: 60%;
+	height: 50px;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #fffcf3;
+	border: 3px solid #b5b6a0;
+	color: #2e2e2e;
+	margin: 15px 0;
+	text-align: center;
+}
+
+#signUp-send, #logIn-send {
+	font-family: "Playwrite DE Grund", cursive;
+	width: 40%;
+	height: 40px;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #dedfc5;
+	border: 3px solid #b5b6a0;
+	color: #2e2e2e;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+#return-box {
+	width: 60%;
+}
+
+#return-box button {
+	background-color: transparent;
+	border: 0;
+}
+
+#return-box button i {
+	font-size: 32px;
+	color: #dedfc5;
+	cursor: pointer;
+}
+
+#header-spacing {
+	width: 14%;
+	height: 99vh;
+	min-width: 240px;
+}
+
+#account-area {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	margin: 0 14px;
+}
+
+#user-account {
+	background-color: #dedfc5;
+	width: 45px;
+	height: 45px;
+	border-radius: 45px;
+	border: none;
+	font-size: 20px;
+	color: #202020;
+	cursor: pointer;
+}
+
+#user-account:active {
+	background-color: #eff0d7;
+}
+
+#user-config {
+	background-color: transparent;
+	width: 35px;
+	height: 35px;
+	border-radius: 45px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	font-size: 28px;
+	margin-left: auto;
+	color: #dedfc5;
+	cursor: pointer;
+}
+
+#user-config:active {
+	color: #eff0d7;
+}
+
+#nav-list {
+	margin-top: 180px;
+}
+
+#nav-list li {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	margin: 8px 0px;
+}
+
+.nav-item-background {
+	background-color: #3d423c;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 300ms;
+}
+
+.nav-item-background a {
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-notes {
+	font-family: "Playwrite DE Grund", cursive;
+	background-color: #313530;
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin: 0 5px;
+	padding: 0;
+	border-top: 1px solid #dedfc5;
+	border-bottom: 1px solid #dedfc5;
+}
+
+#content {
+	width: 86%;
+	height: 99vh;
+}
+
+.row-info {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.row-info h3 {
+	font-family: "Playwrite DE Grund", cursive;
+	font-weight: 600;
+	color: #2e2e2e;
+	margin: 0 50px 6px 50px;
+	font-size: 30px;
+}
+
+#favorites-icon {
+	color: #e2d98c;
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+#search-icon {
+	color: #424242;
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+#other-notes-icon {
+	color: #dedfc5;
+	font-size: 22px;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+
+#favorites-title {
+	font-family: "Playwrite DE Grund", cursive;
+	font-weight: 600;
+	font-size: 24px;
+	color: #6d6d6d;
+}
+
+#other-notes-title {
+	font-family: "Playwrite DE Grund", cursive;
+	font-weight: 600;
+	font-size: 24px;
+	color: #6d6d6d;
+	width: 70px;
+	min-width: 70px;
+}
+
+#division-line {
+	width: 85%;
+	border: 1px solid #ccc;
+	margin: 10px 12px 0px 15px;
+}
+
+.row {
+	padding-bottom: 10px;
+	flex-wrap: wrap;
+	min-height: 340px;
+}
+
+.note-align {
+	display: flex;
+	align-items: center;
+	margin: 40px 50px 0 50px;
+}
+
+#btn-filter {
+	padding: 0;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 18px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: #2e2e2e;
+    margin: 11px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#btn-filter:active {
+	background-color: #eee;
+}
+
+#btn-filter i {
+	margin-top: 2px;
+}
+
+#note-add {
+	background-color: #fff;
+	padding: 0;
+    height: 40px;
+    width: 40px;
+	min-width: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+	margin-top: 11px;
+	border: 2px solid #ccc;
+	color: #2e2e2e;
+	cursor: pointer;
+}
+
+#note-add:active {
+	background-color: #eee;
+}
+
+#search-notes-input {
+	font-family: "Playwrite DE Grund", cursive;
+	width: 350px;
+	height: 45px;
+	border: 2px solid #3d423c;
+	border-radius: 30px;
+	padding: 0 12px;
+	font-size: 18px;
+}
+
+#btnSearchNotes {
+	background-color: #424242;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #202020;
+	border-radius: 30px;
+	margin-left: 20px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#btnSearchNotes:active {
+	background-color: #535353;
+}
+
+.note-box {
+	width: 240px;
+	height: 300px;
+	margin: 0 32px 40px 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.note-info {
+	width: 170px;
+	display: flex;
+	margin-bottom: 13px;
+}
+
+.note-info p {
+	font-family: "Playwrite DE Grund", cursive;
+	width: 94%;
+	font-size: 18px;
+	line-height: 24px;
+	color: #2e2e2e;
+}
+
+.star-button {
+	background-color: transparent;
+	width: 23px;
+	height: 23px;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+}
+
+.note-info i {
+	font-size: 20px;
+	color: #e2d98c;
+}
+
+.note {
+	background-color: #fff;
+	height: 80%;
+	width: 170px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 2px #2e2e2e40;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	transition: all 150ms;
+}
+
+.note:hover {
+	top: -3px;
+	box-shadow: 0 1px 10px 6px #2e2e2e40;
+}
+
+.note i {
+	position: relative;
+    font-size: 25px;
+    top: -116px;
+    right: -60px;
+	color: #fff;
+	transition: top 350ms;
+}
+
+#logout-modal, #delete-account-modal {
+	height: 0;
+    width: 140px;
+    background: #c7c9af;
+    position: absolute;
+    left: 12px;
+    top: 80px;
+    border-radius: 10px;
+	opacity: 0;
+    overflow: hidden;
+	display: none;
+	align-items: center;
+	box-shadow: 0px 0px 10px 1px #212121;
+	transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+#logout-modal.show, #delete-account-modal.show {
+	height: 68px;
+	display: flex;
+	opacity: 1;
+}
+
+#btnLogout, #btnDeleteAccount {
+	font-family: "Playwrite DE Grund", cursive;
+	background-color: #dedfc5;
+	color: #2e2e2e;
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-top: 2px solid #b5b6a0;
+	border-bottom: 2px solid #b5b6a0;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+#btnLogout:active, #btnDeleteAccount:active {
+	background-color:#c7c9af;
+}
+
+#note-title {
+	font-family: "Playwrite DE Grund", cursive;
+	height: 50px;
+    border: none;
+	color: #2e2e2e;
+    border-bottom: 4px solid #b5b6a0;
+    background: transparent;
+    font-size: 30px;
+    padding: 0 9px;
+	border-radius: 2px;
+	box-sizing: content-box;
+}
+
+#note-title:focus-visible {
+	outline: none;
+}
+
+#title-container {
+	position: relative;
+	display: inline-block;
+}
+
+#input-sizer {
+	position: absolute;
+	visibility: hidden;
+	white-space: nowrap;
+	font-size: 30px;
+}
+
+#note-space {
+	width: 100%;
+	height: 75%;
+	display: flex;
+	justify-content: center;
+}
+
+#note {
+	background: white;
+	height: 90%;
+	padding: 10px 15px;
+	border-radius: 16px;
+	box-shadow: 0px 0px 12px 2px #2e2e2e66;
+	border: none;
+	resize: none;
+	transition: all 800ms;
+}
+
+#note:focus {
+	outline: none;
+	box-shadow: 0px 0px 13px 4px #2e2e2e66;
+}
+
+.btnSaveNote {
+	font-family: "Playwrite DE Grund", cursive;
+	width: 136px;
+    height: 40px;
+    margin: 0 50px;
+	font-weight: 600;
+    border-radius: 20px;
+	color: #2e2e2e;
+    border: 3px solid #b5b6a0;
+    background-color: #dedfc5;
+    cursor: pointer;
+	transition: all 300ms;
+}
+
+.btnSaveNote:hover {
+	filter: brightness(0.95);
+}
+
+#links-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 40vh;	
+}
+
+#links-box a {
+	font-size: 36px;
+	margin: 0px 30px;
+	color: #dedfc5;
+	transition: all 300ms;
+}
+
+#links-box a:hover {
+	color: #c7c9af;
+}
+
+#tool-box {
+	position: relative;
+    height: 93%;
+    width: 30px;
+    margin-left: 25px;
+	padding: 10px 0px;
+	border-radius: 16px;
+	display: flex;
+	justify-content: center;
+}
+
+#tool-box-config {
+	height: 190px;
+	display: grid;
+    gap: 20px;
+}
+
+#tool-box-config button {
+	width: 47px;
+	height: 47px;
+	background-color: #fff;
+	border-radius: 0px 16px;
+	box-shadow: 0 0 10px 4px #2e2e2e40;
+	margin: 0px 6px;
+	cursor: pointer;
+	transition: transform 350ms, border-radius 350ms;
+}
+
+#tool-box-config button:hover {
+	transform: scale(1.1);
+}
+
+.btnFontSelector, .btnTextBold, .btnTextItalic, .btnTextUnderline {
+	font-size: 22px;
+	color: #2e2e2e;
+	border: 3px solid #e9e9e9 !important;
+}
+
+.btnTag {
+	border: 3px solid #ffffff49;
+}
+
+.filter-selected {
+	background-color: #e1e1e1 !important;
+	border-radius: 16px !important;
+}
+
+.filter-selected-tag-color {
+	border-radius: 16px !important;
+}
+
+.ql-tooltip {
+    display: none !important;
+}
+
+.ql-editor {
+	line-height: 16px;
+	font-size: 13px;
+}
+
+.ql-editor:focus-visible {
+	outline: none;
+}
+
+.modal-text-config, .modal-tag-color, .modal-delete-note {
+	width: 170px;
+    display: none;
+	border-radius: 0px 16px;
+    position: absolute;
+    background-color: white;
+    border: 3px solid #e3e3e3;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 12px 14px;
+    z-index: 1000;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.modal-delete-note {
+	width: 130px;
+	padding: 0px;
+	justify-content: center;
+	background-color: #f58080;
+	border: 3px solid #00000024;
+}
+
+.modal-text-config.show, .modal-tag-color.show {
+    display: block;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-delete-note.show {
+	display: flex;
+    transform: scale(1);
+    opacity: 1;
+	overflow: hidden;
+}
+
+.modal-text-config-content {
+    position: relative;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 170px;
+}
+
+.select-selected {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    border-radius: 5px;
+	display: flex;
+    justify-content: center;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    z-index: 99;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.select-items::-webkit-scrollbar {
+    width: 10px;
+}
+
+.select-items::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.select-items::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.select-items::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-item {
+    padding: 10px;
+    cursor: pointer;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.select-item:last-of-type {
+	border-bottom: 0;
+}
+
+.select-item:hover {
+    background-color: #ddd;
+}
+
+.tag-color-presets {
+	display: flex;
+	justify-content: space-between;
+}
+
+.preset-color {
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	border: 3px solid #ffffff49;
+	border-radius: 0px 8px;
+	transition: transform 350ms;
+}
+
+.preset-color:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.preset-color:nth-child(1) {
+	background-color: #0eaeab;
+}
+
+.preset-color:nth-child(2) {
+	background-color: #f95842;
+}
+
+.preset-color:nth-child(3) {
+	background-color: #f9ce42;
+}
+
+.preset-color:nth-child(4) {
+	background-color: #32e181;
+}
+
+.box-input-tag-color {
+	display: flex;
+	margin-top: 12px;
+}
+
+#input-tag-color {
+	width: 75%;
+	height: 20px;
+	border: 2px solid #535353;
+	border-radius: 6px;
+	padding: 0px 5px;
+}
+
+#input-tag-color:focus-visible {
+	outline: none;
+}
+
+#btnApplyTagColor {
+	width: 26px;
+	margin-left: 8px;
+	background-color: transparent;
+	border: 2px solid #535353;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#btnApplyTagColor:hover {
+	cursor: pointer;
+}
+
+#btnApplyTagColor:active {
+	background-color: #ddd;
+}
+
+#btnApplyTagColor i {
+	color: #2e2e2e;
+	margin-top: 1px;
+}
+
+.btnMoreNoteOptions {
+	position: relative;
+	top: -100px;
+	left: -80px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.btnMoreNoteOptions i {
+	position: static;
+	color: #6d6d6d;
+}
+
+.btnMoreNoteOptions i:hover {
+	color: #555;
+}
+
+.btnDeleteNote {
+	font-family: "Playwrite DE Grund", cursive;
+	width: 130px;
+	height: 25px;
+	border: none;
+    background-color: #f58080;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: border 200ms;
+}
+
+.btnDeleteNote:active {
+	background-color: #e07474;
+}
+
+#search-box {
+	overflow: hidden;
+	height: 0px;
+	transition: height 400ms;
+}
+
+#btnCancelSearch {
+	width: 34px;
+	height: 34px;
+	color: #535353;
+	background-color: transparent;
+	border: none;
+	display: none;
+	position: relative;
+	left: -115px;
+	top: 2px;
+	padding: 0;
+	font-size: 28px;
+	cursor: pointer;
+}
+
+#btnCancelSearch:hover {
+	color: #3d423c;
+}
+
+.fa-star:hover {
+	color: #d3ca7e;
+}
+
+#btnShowHeader, #btnHiddenHeader {
+	display: none;
+}
+
+.disabled-element-mobile {
+	display: none !important;
+}
+
+#save-mobile {
+	display: none;
+}
